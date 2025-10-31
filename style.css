@@ -1,0 +1,121 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f4f4f9;
+    margin: 0;
+}
+
+.container {
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 750px; 
+    text-align: center;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+#score {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #007bff;
+}
+
+.tree-display-area {
+    background: #ffffff;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 380px; 
+}
+
+#question-text {
+    margin-bottom: 15px; 
+    font-size: 1.1em;
+    color: #333;
+    text-align: center;
+    width: 100%;
+}
+
+#avl-tree-svg {
+    background-color: #fcfcfc;
+    border-radius: 5px;
+    flex-grow: 1;
+}
+
+/* Control Styles */
+.controls button, .controls input {
+    padding: 10px 15px;
+    margin: 5px;
+    font-size: 1em;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.controls button {
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s;
+}
+
+#correct-btn {
+    background-color: #28a745;
+    color: white;
+}
+
+#incorrect-btn {
+    background-color: #dc3545;
+    color: white;
+}
+
+#submit-bf-btn {
+    background-color: #007bff;
+    color: white;
+}
+
+#bf-input {
+    width: 120px;
+    text-align: center;
+}
+
+#next-btn {
+    margin-top: 15px;
+    background-color: #ffc107;
+    color: #333;
+}
+
+#correct-btn:hover { background-color: #218838; }
+#incorrect-btn:hover { background-color: #c82333; }
+#submit-bf-btn:hover { background-color: #0056b3; }
+#next-btn:hover { background-color: #e0a800; }
+
+.feedback {
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-align: left; 
+}
+
+.correct {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.wrong {
+    background-color: #f8d7da;
+    color: #721c24;
+}
