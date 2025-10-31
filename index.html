@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AVL Tree Quiz Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>AVL Tree Validation Quiz 🌳</h1>
+        <div id="score">Score: 0</div>
+
+        <div class="tree-display-area">
+            <p id="question-text"><strong></strong></p> 
+            
+            <svg id="avl-tree-svg" width="600" height="400"></svg>
+        </div>
+        
+        <div class="controls">
+            <div id="boolean-controls">
+                <button id="correct-btn">Yes / Single</button>
+                <button id="incorrect-btn">No / Double</button>
+            </div>
+            <div id="input-controls" style="display: none;">
+                <input type="number" id="bf-input" placeholder="Enter BF (e.g., 1 or -2)">
+                <button id="submit-bf-btn">Submit BF</button>
+            </div>
+        </div>
+
+        <div id="feedback" class="feedback"></div>
+
+        <button id="next-btn" style="display: none;">Next Question</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
